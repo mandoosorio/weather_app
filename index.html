@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <hr>
+
+    <section id="search-section">
+        <h4>Search for City:</h4>
+        <input id="city-search" placeholder="City">
+        <button id="search">Search</button>
+        <div id="button-list">
+        </div>
+    </section>
+
+    <section id="main-section">
+        <div id="inner-main-section">
+            <div>
+                <h2><span class="city"></span> (<span id="date"></span>)<img id="icon1"></h2>
+            </div>
+            <div id="main-section-info">
+                <p class="tempF">Temp:</p>
+                <p class="humidity">Humidity:</p>
+                <p class="wind">Wind Speed:</p>
+                <p>UV Index: <span class="index"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="five-day-section">
+        <h3>5-Day Forecast</h3>
+        <div class="individual-day-1">
+            <p id="second-date" class="date">(mm/dd/yyyy)</p>
+            <div>
+                <img id="icon2" class="icons">
+            </div>
+            <p id="day-two-temp" class="temp"></p>
+            <p id="day-two-humidity" class="humid"></p>
+        </div>
+        <div class="individual-days">
+            <p id="third-date" class="date">(mm/dd/yyyy)</p>
+            <div>
+                <img id="icon3" class="icons">
+            </div>
+            <p id="day-three-temp" class="temp"></p>
+            <p id="day-three-humidity" class="humid"></p>
+        </div>
+        <div class="individual-days">
+            <p id="fourth-date" class="date">(mm/dd/yyyy)</p>
+            <div>
+                <img id="icon4" class="icons">
+            </div>
+            <p id="day-four-temp" class="temp"></p>
+            <p id="day-four-humidity" class="humid"></p>
+        </div>
+        <div class="individual-days">
+            <p id="fifth-date" class="date">(mm/dd/yyyy)</p>
+            <div>
+                <img id="icon5" class="icons">
+            </div>
+            <p id="day-five-temp" class="temp"></p>
+            <p id="day-five-humidity" class="humid"></p>
+        </div>
+        <div class="individual-day-last">
+            <p id="sixth-date" class="date">(mm/dd/yyyy)</p>
+            <div>
+                <img id="icon6" class="icons">
+            </div>
+            <p id="day-six-temp" class="temp"></p>
+            <p id="day-six-humidity" class="humid"></p>
+        </div>
+    </section>
+
+    <footer></footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
+</html>
